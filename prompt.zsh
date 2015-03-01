@@ -85,9 +85,17 @@ function prompt_git() {
 	echo $prompt_git_return
 }
 
+newline_color=$color_green
+function prompt_newline() {
+
+	newline_return="
+%# "
+
+	echo $newline_return
+}
+
 # Prompt
 # root@computer ~ on master*
 
-prompt_variables='$(prompt_location)$(prompt_directory)$(prompt_git)'
-PROMPT="${prompt_variables}
-%# "
+prompt_variables='$(prompt_location)$(prompt_directory)$(prompt_git)$(prompt_newline)'
+PROMPT="${prompt_variables}"
