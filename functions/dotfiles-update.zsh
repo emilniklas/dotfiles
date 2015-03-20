@@ -3,6 +3,6 @@ function dotfiles-update() {
     cd ~/.dotfiles
     git pull &>/dev/null
     cd $cwd
-    . ~/.bashrc
+    . ~/.zshrc
     echo "Dotfiles updated"
 }

@@ -10,6 +10,9 @@ PATH=$PATH:/Applications/dart/dart-sdk/bin
 PATH=$PATH:~/.composer/vendor/bin # global
 PATH=$PATH:vendor/bin # local
 
+# PhpSpec
+PATH=$PATH:vendor/phpspec/phpspec/bin
+
 # Packages
 PATH=$PATH:bin # local
 PATH=$PATH:node_modules/.bin # node
