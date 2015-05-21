@@ -12,17 +12,19 @@ alias rrm="rm -rf"
 # GIT
 alias g="git"
 alias ga="git add"
-alias gc="git commit"
+alias gc="git commit -m"
 alias gp="git push"
 alias gu="git up"
-alias gpub="gpublish"
-alias gca="git commit -am"
+alias gca="git add . && git commit -am"
+alias gpl="git pull"
+alias gs="git status"
 
 # EDITORS
 ps="pstorm"
 st="subl"
 alias ps=$ps
 alias st=$st
+alias vs='open -a /Applications/Visual\ Studio\ Code.app'
 
 # SHORTCUTS
 alias hosts='subl /etc/hosts'
@@ -32,3 +34,10 @@ alias art="php artisan"
 alias m:c="php artisan make:controller"
 alias seed="php artisan db:seed"
 alias mig="php artisan migrate"
+
+# DART (PUB)
+alias p="pub"
+alias pru="pub run"
+alias pg="pub get"
+alias pt="pub run test"
+alias ptt="pub run test test/"
