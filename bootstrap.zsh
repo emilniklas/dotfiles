@@ -15,3 +15,6 @@ source ~/.dotfiles/path.zsh
 
 # 5. Functions
 source ~/.dotfiles/functions.zsh
+
+# 6. Environment
+source ~/.dotfiles/env.zsh
