@@ -18,13 +18,14 @@ alias gu="git up"
 alias gca="git add . && git commit -am"
 alias gpl="git pull"
 alias gs="git status"
+alias gpub="gpublish"
 
 # EDITORS
 ps="pstorm"
 st="subl"
 alias ps=$ps
 alias st=$st
-alias vs='open -a /Applications/Visual\ Studio\ Code.app'
+alias vs="open -a /Applications/Visual\ Studio\ Code.app"
 
 # SHORTCUTS
 alias hosts='subl /etc/hosts'
