@@ -42,3 +42,8 @@ alias pru="pub run"
 alias pg="pub get"
 alias pt="pub run test"
 alias ptt="pub run test test/"
+
+# BROWSERS
+alias safari="open -a /Applications/Safari.app"
+alias chrome="open -a /Applications/Google\ Chrome.app"
+alias dartium="open -a /Applications/Chromium.app"
