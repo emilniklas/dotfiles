@@ -20,6 +20,10 @@ alias gpl="git pull"
 alias gs="git status"
 alias gpub="gpublish"
 
+# OPEN SOURCE COMMUNITY
+alias license="curl http://emilpersson.se/license/ > LICENSE"
+alias readme="echo "# "$(basename $(pwd)) > README.md"
+
 # EDITORS
 ps="pstorm"
 st="subl"
