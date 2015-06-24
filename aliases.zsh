@@ -25,10 +25,9 @@ alias license="curl http://emilpersson.se/license/ > LICENSE"
 alias readme="echo '# '$(basename $(pwd)) > README.md"
 
 # EDITORS
-ps="pstorm"
-st="subl"
-alias ps=$ps
-alias st=$st
+alias ps="pstorm"
+alias ws="wstorm"
+alias st="subl"
 alias vs="open -a /Applications/Visual\ Studio\ Code.app"
 
 # SHORTCUTS
