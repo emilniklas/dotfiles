@@ -29,6 +29,7 @@ alias ps="pstorm"
 alias ws="wstorm"
 alias st="subl"
 alias vs="open -a /Applications/Visual\ Studio\ Code.app"
+alias ii="open -a /Applications/IntelliJ\ IDEA\ 14\ CE.app"
 
 # SHORTCUTS
 alias hosts='subl /etc/hosts'
