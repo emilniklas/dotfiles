@@ -22,7 +22,11 @@ alias gpub="gpublish"
 
 # OPEN SOURCE COMMUNITY
 alias license="curl http://emilpersson.se/license/ > LICENSE"
-alias readme="echo '# '$(basename $(pwd)) > README.md"
+function readme() {
+	name=`basename $(pwd)`
+	echo '# '$name > README.md
+	echo 'Created readme for project '$name
+}
 
 # EDITORS
 alias ps="pstorm"

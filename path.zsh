@@ -1,4 +1,6 @@
 
+# OSX EL Capitan fix
+PATH=$PATH:/usr/local/bin
 
 # Sublime Text
 PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
