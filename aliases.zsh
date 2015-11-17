@@ -11,14 +11,19 @@ alias rrm="rm -rf"
 
 # GIT
 alias g="git"
-alias ga="git add"
-alias gc="git commit -m"
-alias gp="git push"
-alias gu="git up"
-alias gca="git add . && git commit -am"
-alias gpl="git pull"
 alias gs="git status"
-alias gpub="gpublish"
+alias gl="git log"
+alias flow="git flow"
+alias feature="git flow feature"
+alias release="git flow release"
+alias co="git checkout"
+alias ppl="git pull --all --tags && git push --all --tags"
+function commit() {
+    set -e
+    git add .
+    message="$@"
+    git commit -am "${message}"
+}
 
 # OPEN SOURCE COMMUNITY
 alias license="curl http://emilpersson.se/license/ > LICENSE"
