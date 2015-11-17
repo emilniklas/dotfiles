@@ -17,7 +17,7 @@ alias flow="git flow"
 alias feature="git flow feature"
 alias release="git flow release"
 alias co="git checkout"
-alias ppl="git pull --all --tags && git push --all --tags"
+alias ppl="git pull --all && git pull --tags && git push --all && git push --tags"
 function commit() {
     git add . &&
     message="$@" &&
