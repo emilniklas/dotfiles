@@ -1,6 +1,7 @@
 [user]
     name = Emil Broman
     email = emil@emilbroman.me
+    signingkey = FDBB98B6
 
 [core]
     excludesfile = ~/.gitignore_global
@@ -16,3 +17,6 @@
 
 [diff]
     colorMoved = zebra
+
+[commit]
+    gpgsign = true

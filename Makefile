@@ -22,4 +22,5 @@ include tmux/tmux.mk
 include alacritty/alacritty.mk
 include ripgrep/ripgrep.mk
 include nvim/neovim.mk
+include gpg/gpg.mk
 include git/git.mk
