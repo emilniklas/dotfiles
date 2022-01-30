@@ -1,3 +1,5 @@
+set -g escape-time 10
+
 bind -n C-h select-pane -L  # move left
 bind -n C-j select-pane -D  # move down
 bind -n C-k select-pane -U  # move up

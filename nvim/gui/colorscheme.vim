@@ -6,6 +6,47 @@ set background=dark
 hi clear
 syntax reset
 
+" Status
+set laststatus=2
+set noshowmode
+set statusline=%{%StatusLineContent()%}
+hi StatusLine                guifg=none     guibg=none     gui=none
+hi StatusLineNC              guifg=none     guibg=none     gui=none
+
+hi StatusLineCurrent         guifg=#354256  guibg=#E6EAF1
+hi StatusLineNotCurrent      guifg=#C0C8D8  guibg=#354256
+
+hi StatusLineModeInsert      guifg=#13A852  guibg=#B8FFD6  gui=none
+hi StatusLineModeCommand     guifg=#CF431B  guibg=#FFEEE9  gui=none
+hi StatusLineModeVisual      guifg=#A61987  guibg=#FFD2F5  gui=none
+
+func! StatusLineContent()
+  let fmt=''
+
+  if win_getid() == g:actual_curwin
+    let fmt .= '%#StatusLineCurrent#'
+  else
+    let fmt .= '%#StatusLineNotCurrent#'
+  endif
+
+  if getbufinfo(bufnr())[0].changed
+    let fmt .= ' •'
+  endif
+
+  let fmt .= ' %f %#Normal#'
+
+  if mode() == 'i'
+    let fmt .= ' %#StatusLineModeInsert# INSERT %#Normal#'
+  elseif tolower(mode()) == 'v'
+    let fmt .= ' %#StatusLineModeVisual# VISUAL %#Normal#'
+  elseif mode() == 'c'
+  elseif mode() != 'n'
+    let fmt .= ' %#StatusLineNotCurrent# ' . mode() . ' %#Normal#'
+  endif
+
+  return fmt
+endfunc
+
 " Gutter
 set number
 set signcolumn=number
@@ -83,8 +124,6 @@ hi MoreMsg                   guifg=#1FBC61                 gui=bold
 hi ModeMsg                                                 gui=bold
 hi CursorLineNr              guifg=#F6E36F                 gui=bold
 hi Question                  guifg=#2EDF79                 gui=bold
-hi StatusLine                guifg=#354256  guibg=#E6EAF1  gui=none
-hi StatusLineNC              guifg=#C0C8D8  guibg=#354256  gui=none
 hi VertSplit                 guifg=#354256                 gui=none
 hi Title                                                   gui=none
 hi Visual                                   guibg=#354256
