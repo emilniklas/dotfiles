@@ -1,6 +1,6 @@
 alias vim=nvim
 alias co="git checkout"
-alias gap="git add :/ -p"
+alias gap="git add :/ -Ap"
 
 export GPG_TTY=(tty)
 
