@@ -1,4 +1,4 @@
-default: alacritty neovim git docker
+default: alacritty neovim git docker neomutt
 
 CONFIG_DIR ?= $(HOME)/.config
 
@@ -12,8 +12,8 @@ $(CONFIG_DIR):
 	mkdir $(CONFIG_DIR)
 
 # Homebrew
-HOMEBREW_NO_INSTALL_UPGRADE = 1
-HOMEBREW_NO_INSTALL_CLEANUP = 1
+export HOMEBREW_NO_INSTALL_UPGRADE = 1
+export HOMEBREW_NO_INSTALL_CLEANUP = 1
 BREW ?= $(BIN_DIR)/brew
 $(BREW):
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -29,3 +29,4 @@ include alacritty/alacritty.mk
 include ripgrep/ripgrep.mk
 include nvim/neovim.mk
 include docker/docker.mk
+include neomutt/neomutt.mk

@@ -1,0 +1,34 @@
+set smtp_url="smtps://emil@emilbroman.me@smtp.fastmail.com:465"
+set folder="imaps://emil@emilbroman.me@imap.fastmail.com:993"
+
+set smtp_pass="`gpg --batch -q --decrypt ~/.config/neomutt/password.asc 2>/dev/null`"
+set imap_pass="`gpg --batch -q --decrypt ~/.config/neomutt/password.asc 2>/dev/null`"
+
+set spoolfile="+INBOX"
+set record="+Sent"
+set trash="+Archive"
+set postponed="+Drafts"
+
+set from="emil@emilbroman.me"
+set realname="Emil Broman"
+
+set sort="reverse-date-received"
+set header_cache="~/.cache/neomutt/header_cache"
+
+mailboxes =INBOX =Archive =Drafts =Sent =Spam =Trash
+
+# Keybindings
+bind index,pager F imap-fetch-mail
+unbind index g
+bind index G last-entry
+bind index gg first-entry
+
+# Format
+set index_format=" %-30L %s %* %Z %<[y?%<[d?%[%H:%M ]&%[%b %d]>&%[%b %d %Y]> "
+set status_format=" %D%* %m messages "
+
+# Colors
+color normal default default
+color index_date brightblack default
+color index_author bold yellow default ".*"
+color index_flags blue default ".*"
