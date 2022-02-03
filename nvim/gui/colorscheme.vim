@@ -52,7 +52,7 @@ set number
 set signcolumn=number
 set numberwidth=5
 set foldmethod=syntax
-set foldlevelstart=8
+set foldlevelstart=100
 hi LineNr                    guifg=#354256
 hi Folded                    guifg=#354256  guibg=none
 hi FoldColumn                guifg=#354256  guibg=none
@@ -107,16 +107,36 @@ hi link typescriptAssign               Operator
 hi link typescriptBinaryOp             Operator
 hi link typescriptBinaryOp             Operator
 
-hi link typescriptProp                 Function
-hi link typescriptObjectLabel          Function
+" Fix highlighting of object access properties
+autocmd filetype typescriptreact syntax match   typescriptProp contained /\K\k*!\?/
+  \ nextgroup=@afterIdentifier
+  \ skipwhite skipempty
+
+syn match typescriptProp /\K\k*!\?/  contained contains=@props nextgroup=@afterIdentifier skipwhite skipempty
+
+hi link typescriptProp                 PreProc
+hi typescriptProp            guifg=#FAC5B6                 gui=italic
+hi link typescriptObjectLabel          typescriptProp
+
+hi link tsxCloseString                 xPunctuation
+hi link tsxEqual                       xPunctuation
+
+" HTML
+hi link htmlTag                        xPunctuation
+hi htmlTagName               guifg=#F8EB9E
 
 " Rust
 hi link rustFoldBraces                 xPunctuation
 
+" Netrw
+hi netrwPlain                guifg=#E6EAF1
+hi Directory                 guifg=#F9EEAD                 gui=bold
+hi netrwClassify             guifg=#354256                 gui=bold
+hi link netrwTreeBar                   xPunctuation
+
 hi SpecialKey                guifg=#3AE7EC
 hi TermCursor                                              gui=none
 hi NonText                   guifg=#19232F
-hi Directory                 guifg=#3AE7EC
 hi ErrorMsg                  guifg=#E6EAF1  guibg=#E05E6F
 hi IncSearch                                               gui=none
 hi Search                    guifg=#000000  guibg=#F6E36F

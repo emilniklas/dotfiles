@@ -11,4 +11,7 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 set completeopt=menu,menuone,noselect
 
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'folke/trouble.nvim'
+
 runtime lsp/registerLanguage.lua

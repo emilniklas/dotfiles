@@ -10,5 +10,5 @@ $(NEOVIM): $(BREW) $(RIPGREP) $(VIMPLUG)
 	$(NEOVIM) --headless +'PlugInstall | qa'
 
 $(VIMPLUG):
-    curl -fLo "$(VIMPLUG)" --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	curl -fLo "$(VIMPLUG)" --create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

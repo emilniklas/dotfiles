@@ -2,7 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
 SETUVAR __fish_initialized:3100
-SETUVAR fish_color_autosuggestion:354256
+SETUVAR fish_color_autosuggestion:77849E
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:ECD444\x1e\x2d\x2dbold
 SETUVAR fish_color_comment:77849E\x1e\x2d\x2ditalics
@@ -26,7 +26,7 @@ SETUVAR fish_color_status:ECD444\x1e\x2d\x2dunderline
 SETUVAR fish_color_user:F46036
 SETUVAR fish_color_valid_path:F8EB9E\x1e\x2d\x2dunderline
 SETUVAR fish_key_bindings:fish_default_key_bindings
-SETUVAR fish_pager_color_completion:354256
+SETUVAR fish_pager_color_completion:77849E
 SETUVAR fish_pager_color_description:77849E
 SETUVAR fish_pager_color_prefix:E6EAF1\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:354256\x1e\x2d\x2dbackground\x3dE6EAF1

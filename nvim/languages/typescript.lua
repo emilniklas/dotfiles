@@ -1,5 +1,0 @@
-registerLanguage {
-    lsp = {
-        tsserver = {}
-    }
-}
