@@ -1,4 +1,4 @@
-default: alacritty neovim git docker neomutt
+default: alacritty neovim git docker
 
 CONFIG_DIR ?= $(HOME)/.config
 
@@ -29,4 +29,3 @@ include alacritty/alacritty.mk
 include ripgrep/ripgrep.mk
 include nvim/neovim.mk
 include docker/docker.mk
-include neomutt/neomutt.mk
