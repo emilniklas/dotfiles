@@ -83,6 +83,10 @@ hi Comment                   guifg=#E6EAF1  guibg=#354256  gui=italic
 " Custom
 hi xPunctuation              guifg=#77849E
 
+" JavaScript
+hi link javascriptStatement            Keyword
+hi link javascriptException            Keyword
+
 " TypeScript
 hi link typescriptExport               Keyword
 hi link typescriptModule               Keyword
