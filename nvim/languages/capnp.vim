@@ -1,0 +1,1 @@
+Plug 'cstrahan/vim-capnp'
