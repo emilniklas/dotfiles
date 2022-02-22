@@ -5,6 +5,7 @@ set -g status-position top
 set -g status-interval 1
 set -g status-left ""
 set -g status-right "#[bold]#(cd #{pane_current_path}; git branch --show-current 2>/dev/null)#[normal]  #[fg=#77849E]#(date +'%H:%M')#[normal]"
+set -g status-right-length 300
 
 set -g base-index 1
 set -g renumber-windows on
