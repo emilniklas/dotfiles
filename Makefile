@@ -16,7 +16,7 @@ export HOMEBREW_NO_INSTALL_UPGRADE = 1
 export HOMEBREW_NO_INSTALL_CLEANUP = 1
 BREW ?= $(BIN_DIR)/brew
 $(BREW):
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	/bin/bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 .PHONY: homebrew
 homebrew: $(BREW)
