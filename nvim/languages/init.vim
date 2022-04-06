@@ -18,5 +18,6 @@ call UseSpaces('*', 2)
 
 runtime languages/ecmascript.vim
 runtime languages/rust.lua
+runtime languages/go.lua
 runtime languages/make.lua
 runtime languages/capnp.vim

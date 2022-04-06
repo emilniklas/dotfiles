@@ -1,7 +1,13 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export CARGO_HOME:/Users/emilbroman/\x2elocal/share/cargo
 SETUVAR --export EDITOR:nvim
+SETUVAR --export GOPATH:/Users/emilbroman/\x2elocal/share/go
+SETUVAR --export RUSTUP_HOME:/Users/emilbroman/\x2elocal/share/rustup
 SETUVAR __fish_initialized:3100
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/emilbroman/\x2econfig/fish/fisher/functions/fisher\x2efish\x1e/Users/emilbroman/\x2econfig/fish/fisher/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/emilbroman/\x2econfig/fish/fisher/functions/_nvm_index_update\x2efish\x1e/Users/emilbroman/\x2econfig/fish/fisher/functions/_nvm_list\x2efish\x1e/Users/emilbroman/\x2econfig/fish/fisher/functions/_nvm_version_activate\x2efish\x1e/Users/emilbroman/\x2econfig/fish/fisher/functions/_nvm_version_deactivate\x2efish\x1e/Users/emilbroman/\x2econfig/fish/fisher/functions/nvm\x2efish\x1e/Users/emilbroman/\x2econfig/fish/fisher/conf\x2ed/nvm\x2efish\x1e/Users/emilbroman/\x2econfig/fish/fisher/completions/nvm\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
 SETUVAR fish_color_autosuggestion:77849E
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:ECD444\x1e\x2d\x2dbold
@@ -30,3 +36,6 @@ SETUVAR fish_pager_color_completion:77849E
 SETUVAR fish_pager_color_description:77849E
 SETUVAR fish_pager_color_prefix:E6EAF1\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:354256\x1e\x2d\x2dbackground\x3dE6EAF1
+SETUVAR nvm_data:/Users/emilbroman/\x2elocal/share/nvm
+SETUVAR nvm_default_version:latest
+SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist
