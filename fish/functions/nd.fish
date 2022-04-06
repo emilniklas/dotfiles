@@ -14,4 +14,6 @@ function nd
 
   osascript \
     -e 'display notification "'$message'" with title "'$title'" sound name "'$sound'"'
+
+  return $stat
 end
