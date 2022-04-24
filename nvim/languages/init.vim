@@ -22,3 +22,4 @@ runtime languages/go.lua
 runtime languages/make.lua
 runtime languages/capnp.vim
 runtime languages/terraform.lua
+runtime languages/motoko.lua
