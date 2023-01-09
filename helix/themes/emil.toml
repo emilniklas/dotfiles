@@ -1,0 +1,100 @@
+"ui.background" = "gray350"
+"ui.text" = "gray150"
+"ui.selection" = { bg = "gray300" }
+
+"ui.linenr" = "gray300"
+"ui.linenr.selected" = "gray250"
+
+"ui.statusline" = { bg = "gray150", fg = "gray350" }
+"ui.statusline.inactive" = { bg = "gray350", fg = "gray150" }
+
+"ui.virtual.ruler" = "gray300"
+
+"special" = "orange300"
+
+# Syntax highlighting
+
+"keyword" = { fg = "blue350", modifiers = ["bold"] }
+
+"variable.builtin" = { fg = "blue250", modifiers = ["bold"] }
+"variable.other" = { fg = "orange200" }
+
+"type" = "red300"
+"constructor" = "red200"
+
+"string" = "green200"
+
+"function" = "blue200"
+
+"comment" = { bg = "gray300", fg = "gray100" }
+
+"punctuation" = "gray250"
+"operator" = "gray200"
+"namespace" = "magenta100"
+"constant" = "yellow200"
+"label" = "blue250"
+
+[palette]
+gray100 = "#FAFBFF"
+gray150 = "#E6EAF1"
+gray200 = "#C0C8D8"
+gray250 = "#77849E"
+gray300 = "#354256"
+gray350 = "#19232F"
+gray400 = "#000000"
+
+red100 = "#FDD9DE"
+red150 = "#FFCED4"
+red200 = "#FFBBC4"
+red250 = "#F997A4"
+red300 = "#E05E6F"
+red350 = "#E4455A"
+red400 = "#D7263D"
+
+green100 = "#B8FFD6"
+green150 = "#86F5B5"
+green200 = "#6AEAA0"
+green250 = "#2EDF79"
+green300 = "#23CE6B"
+green350 = "#1FBC61"
+green400 = "#13A852"
+
+yellow100 = "#FFFBE0"
+yellow150 = "#F9EEAD"
+yellow200 = "#F8EB9E"
+yellow250 = "#F6E36F"
+yellow300 = "#F3DD57"
+yellow350 = "#ECD444"
+yellow400 = "#ECC744"
+
+blue100 = "#DAEDFF"
+blue150 = "#BBDAFB"
+blue200 = "#9EC6EF"
+blue250 = "#7AADE2"
+blue300 = "#4B8FD6"
+blue350 = "#3E84CD"
+blue400 = "#2872BE"
+
+magenta100 = "#FFD2F5"
+magenta150 = "#FF92E7"
+magenta200 = "#FD6BDD"
+magenta250 = "#F250CE"
+magenta300 = "#DD2FB7"
+magenta350 = "#C924A5"
+magenta400 = "#A61987"
+
+cyan100 = "#E5FEFF"
+cyan150 = "#A7FDFF"
+cyan200 = "#68F4F8"
+cyan250 = "#3AE7EC"
+cyan300 = "#43E0E4"
+cyan350 = "#37C9CD"
+cyan400 = "#19ABAF"
+
+orange100 = "#FFEEE9"
+orange150 = "#FED7CC"
+orange200 = "#FAC5B6"
+orange250 = "#FB997D"
+orange300 = "#F87956"
+orange350 = "#F46036"
+orange400 = "#CF431B"

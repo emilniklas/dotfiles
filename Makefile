@@ -28,4 +28,5 @@ include tmux/tmux.mk
 include alacritty/alacritty.mk
 include ripgrep/ripgrep.mk
 include nvim/neovim.mk
+include helix/helix.mk
 include docker/docker.mk
