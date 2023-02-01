@@ -4,6 +4,12 @@
 
 "ui.linenr" = "gray300"
 "ui.linenr.selected" = "gray250"
+# "ui.cursor" = { bg = "gray350", underline = { color = "red300", style = "line" } }
+"ui.cursor.primary" = { bg = "gray150" }
+"ui.popup" = { bg = "gray300" }
+"ui.menu" = { bg = "gray300" }
+"ui.menu.selected" = { bg = "gray250" }
+"ui.help" = { bg = "gray300" }
 
 "ui.statusline" = { bg = "gray150", fg = "gray350" }
 "ui.statusline.inactive" = { bg = "gray350", fg = "gray150" }
@@ -11,6 +17,12 @@
 "ui.virtual.ruler" = "gray300"
 
 "special" = "orange300"
+"error" = "red400"
+"diagnostic.error" = { fg = "red400", underline = { color = "red400", style = "curl" } }
+"warning" = "yellow400"
+"diagnostic.warning" = { underline = { color = "yellow400", style = "dashed" } }
+"hint" = "blue400"
+"diagnostic.hint" = { underline = { color = "blue400", style = "dot" } }
 
 # Syntax highlighting
 
@@ -26,7 +38,7 @@
 
 "function" = "blue200"
 
-"comment" = { bg = "gray300", fg = "gray100" }
+"comment" = { bg = "gray300", fg = "gray100", modifiers = ["italic"] }
 
 "punctuation" = "gray250"
 "operator" = "gray200"

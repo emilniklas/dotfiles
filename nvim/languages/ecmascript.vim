@@ -8,6 +8,7 @@ Plug 'prettier/vim-prettier', {
 let g:prettier#exec_cmd_async = 1
 
 autocmd BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx call PrettierMapping()
+autocmd BufNewFile,BufRead *.js,*.jsx,*.ts,*.tsx TSBufEnable highlight
 
 function! PrettierMapping()
   nnoremap <buffer> <leader>m :Prettier<cr>

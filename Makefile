@@ -1,4 +1,4 @@
-default: alacritty neovim git docker
+default: wezterm neovim git docker
 
 CONFIG_DIR ?= $(HOME)/.config
 
@@ -26,6 +26,7 @@ include gpg/gpg.mk
 include git/git.mk
 include tmux/tmux.mk
 include alacritty/alacritty.mk
+include wezterm/wezterm.mk
 include ripgrep/ripgrep.mk
 include nvim/neovim.mk
 include helix/helix.mk

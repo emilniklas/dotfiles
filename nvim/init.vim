@@ -14,3 +14,4 @@ runtime languages/init.vim
 call plug#end()
 
 runtime lsp/config.vim
+runtime gui/config.vim
